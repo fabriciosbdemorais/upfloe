@@ -1,381 +1,298 @@
-<!doctype html>
-<html class="h-100" lang="en">
-
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1shrink-to-fit=no">
-        <meta name="description" content="Produção de conteúdo multiplaforma para redes sociais, desenvolvimento de website/blog e impulsionamento de conteúdo nas redes sociais.">
-        <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png"> -->
-        <meta name="author" content="Holger Koenemann">
-        <meta name="generator" content="Eleventy v2.0.0">
-        <meta name="HandheldFriendly" content="true">
-        <title>UpFloe | Floe Tecnologia</title>
-        <link
-        rel="stylesheet" href="css/theme.css">
-        <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-NKX2TVWC');
-        </script>
-        <!-- End Google Tag Manager -->
-        <style>
-            /* inter-300 - latin */
-            @font-face {
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 300;
-                font-display: swap;
-                src: local(''), url('fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-            }
-
-            /* inter-400 - latin */
-            @font-face {
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 400;
-                font-display: swap;
-                src: local(''), url('fonts/inter-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('fonts/inter-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-            }
-
-            @font-face {
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 500;
-                font-display: swap;
-                src: local(''), url('fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-            }
-            @font-face {
-                font-family: 'Inter';
-                font-style: normal;
-                font-weight: 700;
-                font-display: swap;
-                src: local(''), url('fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-                url('fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-            }
-        </style>
-    </head>
-
-    <body
-        class="bg-dark text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll" >
-        <!-- Google Tag Manager (noscript) -->
-        <noscript>
-            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NKX2TVWC" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-        </noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <nav id="navScroll" class="navbar navbar-dark bg-transparent fixed-top px-vw-5" tabindex="0">
-            <div class="container">
-                <a class="navbar-brand pe-md-4 fs-5 col-12 col-md-auto text-center" href="index.html">
-                    <img class="img-brand" alt="Logo da UpFloe" src="img/floe_logo.png">
-                </a>
-                <!-- <a href="https://templatedeck.com/klar-html-template.html" aria-label="Download this template" class="btn btn-white">
-                    <small>Conversar com especialista</small>
-                </a> -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1shrink-to-fit=no">
+    <meta name="description" content="Produção de conteúdo multiplaforma para redes sociais, desenvolvimento de website/blog e impulsionamento de conteúdo nas redes sociais.">
+    <title>UpFloe | Produção de conteúdo e desenvolvimento web</title>
+    <link rel="stylesheet" href="/package/theme.css">
+    <link href="/package/aos.css" rel="stylesheet">
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-NKX2TVWC');
+    </script>
+    <style>
+        /* http://meyerweb.com/eric/tools/css/reset/ 
+        v2.0 | 20110126
+        License: none (public domain)
+        */
+        html, body, div, span, applet, object, iframe,
+        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+        a, abbr, acronym, address, big, cite, code,
+        del, dfn, em, img, ins, kbd, q, s, samp,
+        small, strike, strong, sub, sup, tt, var,
+        b, u, i, center,
+        dl, dt, dd, ol, ul, li,
+        fieldset, form, label, legend,
+        table, caption, tbody, tfoot, thead, tr, th, td,
+        article, aside, canvas, details, embed, 
+        figure, figcaption, footer, header, hgroup, 
+        menu, nav, output, ruby, section, summary,
+        time, mark, audio, video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-size: 100%;
+            font: inherit;
+            vertical-align: baseline;
+        }
+        /* HTML5 display-role reset for older browsers */
+        article, aside, details, figcaption, figure, 
+        footer, header, hgroup, menu, nav, section {
+            display: block;
+        }
+        body {
+            line-height: 1;
+        }
+        ol, ul {
+            list-style: none;
+        }
+        blockquote, q {
+            quotes: none;
+        }
+        blockquote:before, blockquote:after,
+        q:before, q:after {
+            content: '';
+            content: none;
+        }
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+    </style>
+</head>
+<body>
+    <nav id="nav">
+        <a href="/">
+            <img alt="Logo da UpFloe" src="/media/floe_logo.png" width="133">
+        </a>
+    </nav>
+    <main>
+        <section class="intro-section">
+            <div class="section-container">
+                <h2>&#60;transformamos visões em realidade/&#62;</h2>
+                <h1>Criamos o extraordinário para a sua marca</h1>
+                <p>
+                    <span class="starter-color">ENVOLVA.</span> <span class="plus-color">CONECTE.</span> <span class="impulse-color">ENGAJE.</span>
+                </p>
+                <button class="open-chat">
+                    <span>Conversar com especialista</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </button>
             </div>
-        </nav>
-        <main>
-            <div class="w-100 overflow-hidden position-relative bg-black text-white" data-aos="fade" id="intro">
-                <div class="position-absolute w-100 h-100 bg-black opacity-75 top-0 start-0 z-2"></div>
-                <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center z-3">
-                    <div class="row d-flex align-items-center justify-content-center py-vh-5">
-                        <div class="col-12 col-xl-10 container-xs">
-                            <span class="h5">Transformamos visões em realidade</span>
-                            <h1 class="display-huge mt-3 mb-3 lh-1">Criamos o extraordinário para a sua empresa</h1>
-                        </div>
-                        <div class="col-12 col-xl-8">
-                            <p class="lead">
-                                <span class="color-starter">ENVOLVA.</span> <span class="color-plus">CONECTE.</span> <span class="color-impulse">ENGAJE.</span>
-                            </p>
-                        </div>
-                        <div class="col-12 text-center">
-                            <a href="" class="btn btn-xl btn-light open-chat">Conversar com especialista
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+            <video autoplay loop muted>
+                <source src="/media/cat_background.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section class="qualification-section">
+            <div class="section-container">
+                <div class="qualification-headlines" data-aos="fade-right">
+                    <h3>Prepara-se para todas as interações<h3>
+                    <h2>Qualquer cliente vai pesquisar antes de comprar de você!</h2>
                 </div>
-                <video autoplay loop muted class="intro-video">
-                  <source src="media/cat_background.mp4" type="video/mp4">
-                </video>
-            </div>
-
-            <div class="bg-dark">
-                <div class="container px-vw-4 py-vh-5 p-5">
-                    <div class="row d-flex">
-                        <div class="col-12 col-lg-12 text-lg-end pt-5" data-aos="fade-right">
-                            <span class="h4 text-secondary fw-lighter">Prepara-se para todas as interações</span>
-                            <h2 class="display-4">Qualquer pessoa vai pesquisar antes de comprar de você!</h2>
-                        </div>
-                        <div class="col-12 col-lg-4 pt-5" data-aos="fade">
-                            <h4 class="color-starter">Momento da Procura</h4>
-                            <p class="text-secondary">
-                                Quando a pessoa está buscando informações de serviços e produtos, é essencial que a <strong>comunicação</strong> em todas as plataformas esteja <strong>clara</strong> e <strong>envolvente</strong>.<br>
-                                <br><br>
-                                <a href="#starter" class="link-fancy link-fancy-light text-secondary me-2">Conhecer o <span class="color-starter">STARTER</span></a>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle color-starter" viewbox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                                </svg>
-                            </p>
-                        </div>
-                        <div class="col-12 col-lg-4 pt-5" data-aos="fade">
-                            <h4 class="color-plus">Momento da Imersão</h4>
-                            <p class="text-secondary">
-                                A <strong>página</strong> <strong>conecta pessoas</strong> nos momentos em que elas estão buscando informações de serviços e produtos e até mesmo aprendendo sobre assuntos específicos.<br>
-                                <br><br>
-                                <a href="#plus" class="link-fancy link-fancy-light text-secondary me-2">Conhecer o <span class="color-plus">PLUS</span></a>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle color-plus" viewbox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                                </svg>
-                            </p>
-                        </div>
-                        <div class="col-12 col-lg-4 pt-5" data-aos="fade">
-                            <h4 class="color-impulse">Momento da Descoberta</h4>
-                            <p class="text-secondary">
-                                Para <strong>alcançar</strong> novas <strong>pessoas</strong> é necessário <strong>engajá-las</strong> com conteúdos relevantes nas redes sociais para que descubram serviços e produtos diferentes.
-                                <br><br>
-                                <a href="#impulse" class="link-fancy link-fancy-light text-secondary me-2">Conhecer o <span class="color-impulse">IMPULSE</span></a>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrow-right-circle color-impulse" viewbox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
-                                </svg>
-                            </p>
-                        </div>
+                <div class="qualification-moments">
+                    <div class="qualification-moment" data-aos="fade">
+                        <h3 class="starter-color">
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                            <span>Momento da Procura</span>
+                        </h3>
+                        <p>Quando as pessoas decidem adquirir um produto ou serviço, possivelmente vão buscar informações na internet para tomar a decisão. A <strong>comunicação visual envolvente</strong> pode acelerar o processo de decisão neste momento da procura.</p>
+                        <a href="/">
+                            <span>Leia sobre o assunto</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1.3em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg>
+                        </a>
+                        <a href="#starter">
+                            <span>Conheça o <span class="starter-color">STARTER</span></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="color-starter" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                        <p>O <strong class="starter-color">Starter</strong> é ideal para quem quer <strong>causar impacto visual</strong> em várias plataformas com vídeos e imagens envolventes. Pense no Starter como uma verdadeira renovação de imagem, uma forma de dar um novo começo. Em outras palavras, melhorar a "vitrine".</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="bg-black py-vh-3" id="starter">
-                <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-
-                    <div class="row gx-5">
-                        <div class="col-12 col-lg-6">
-                            <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
-                                <div class="p-0 d-flex">
-                                    <iframe class="rounded-5 plan-video" width="395" height="700" src="https://www.youtube.com/embed/zjy608LYJ88?controls=0&rel=0" title="Equilibra perfeitamente o salgado com o ácido - resultado incrivelmente macio e suculento!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="p-3 pt-0 mt-5" data-aos="fade">
-                                <span class="h1 color-starter">STARTER</span>
-                                <p class="text-secondary">Conteúdos produzidos uma única vez com a intenção de envolver pessoas que estão na fase mais avançada do processo de decisão.</p>
-                                <p class="text-secondary">Otimize a sua presença com mídias envolventes em todas as plataformas:</p>
-                                <ul class="text-secondary">
-                                    <li><small>Instagram</small></li>
-                                    <li><small>Facebook</small></li>
-                                    <li><small>TikTok</small></li>
-                                    <li><small>WhatsApp Business</small></li>
-                                    <li><small>Google Meu Negócio</small></li>
-                                    <li><small>Entre outras...</small></li>
-                                </ul>
-                                <h2 class="display-huge mb-3 mt-4">
-                                    <span class="fs-4 me-2 fw-light">R$</span>
-                                    <span class="border-bottom border-5">997</span>
-                                    <span class="fs-6 fw-light"><small><small>Até 3x de R$ 332,33</small></small></span>
-                                </h2>
-                                <small class="text-secondary"><small>Inclui:</small></small>
-                                <ul class="text-secondary list-unstyled">
-                                    <li><small><small>5 vídeos de 30s no aspecto vertical [9:16]</small></small></li>
-                                    <li><small><small>5 imagens no aspecto quadrado [1:1]</small></small></li>
-                                </ul>
-                                <p><small class="text-secondary"><small>*Consulte adicionais de vídeos e imagens.</small></small></p>
-                                <a href="" class="btn btn-light btn-starter px-3 px-md-5 mt-3 open-chat-starter">Quero otimizar minha presença
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
+                    <div class="qualification-moment" data-aos="fade">
+                        <h3 class="plus-color">
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 256A192 192 0 1 0 64 256a192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+                            <span>Momento da Imersão</span>
+                        </h3>
+                        <p>Quando as pessoas pesquisam, talvez são direcionadas para um site ou blog. O <strong>canal</strong> de <strong>aprofundamento</strong> sobre serviços, produtos e assuntos específicos, pode colaborar com a solicitação de contato.</p>
+                        <a href="/">
+                            <span>Leia sobre o assunto</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1.3em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg>
+                        </a>
+                        <a href="#plus">
+                            <span>Conheça o <span class="plus-color">PLUS</span></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="color-starter" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                        <p>O <strong class="plus-color">Plus</strong> é ideal para quem deseja <strong>criar experiências personalizadas</strong> através de páginas e artigos para blog. Pense no Plus como uma forma de conectar pessoas e marcas com uma interação aprofundada e planejada para otimizar o processo de vendas.</p>
                     </div>
-
-                </div>
-
-            </div>
-            <div class="bg-dark py-vh-3" id="plus">
-                <div class="container px-vw-5 py-vh-3 rounded-5">
-
-                    <div class="row gx-5">
-                        <div class="col-12 col-lg-6 order-2 order-lg-1">
-                            <div class="p-3 pt-0 mt-5" data-aos="fade">
-                                <span class="h1 color-plus">PLUS</span>
-                                <p class="text-secondary">Página personalizada com informações de serviços e produtos para conectar potenciais clientes e contribuir com as solicitações de contato.</p>
-                                <p class="text-secondary">Reforce a conexão entre a sua marca e clientes com páginas <i>web</i> personalizadas.</p>
-                                <h2 class="display-huge mb-3 mt-4">
-                                    <span class="fs-4 me-2 fw-light">R$</span>
-                                    <span class="border-bottom border-5">1.897</span>
-                                    <span class="fs-6 fw-light"><small><small>Até 3x de R$ 632,33</small></small></span>
-                                </h2>
-                                <small class="text-secondary"><small>Inclui:</small></small>
-                                <ul class="text-secondary list-unstyled">
-                                    <li><small><small>5 seções com texto, imagens e/ou vídeos</small></small></li>
-                                    <li><small><small><small>Suporte para alterações de texto, imagem ou vídeo por um 1 ano</small></small></small></li>
-                                </ul>
-                                <p><small class="text-secondary"><small>*Consulte adicionais de páginas, seções, blog e outros recursos.</small></small></p>
-                                <a href="" class="btn btn-light btn-plus px-3 px-md-5 mt-3 open-chat-plus">Quero conectar meus clientes
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6 order-1 order-lg-2">
-                            <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
-                                <div class="p-0">
-                                    <iframe class="rounded-5 plan-video" width="395" height="700" src="https://www.youtube.com/embed/zjy608LYJ88?controls=0&rel=0" title="Equilibra perfeitamente o salgado com o ácido - resultado incrivelmente macio e suculento!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="bg-black py-vh-3" id="impulse">
-                <div class="container bg-black px-vw-5 py-vh-3 rounded-5 shadow">
-
-                    <div class="row gx-5">
-                        <div class="col-12 col-lg-6">
-                            <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
-                                <div class="p-0 d-flex">
-                                    <iframe class="rounded-5 plan-video" width="395" height="700" src="https://www.youtube.com/embed/zjy608LYJ88?controls=0&rel=0" title="Equilibra perfeitamente o salgado com o ácido - resultado incrivelmente macio e suculento!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-6">
-                            <div class="p-3 pt-0 mt-5" data-aos="fade">
-                                <span class="h1 color-impulse">IMPULSE</span>
-                                <p class="text-secondary">Conteúdos produzidos mensalmente para engajar pessoas que não sabem que tem um problema específico e desconhecem as suas soluções de serviços ou produtos.</p>
-                                <p class="text-secondary">Engaje pessoas novas com mídias envolventes e converta em vendas.</p>
-                                <h2 class="display-huge mb-3 mt-4">
-                                    <span class="fs-4 me-2 fw-light">R$</span>
-                                    <span class="border-bottom border-5">1.597</span>
-                                    <span class="fs-6 fw-light">/ mês</span>
-                                </h2>
-                                <p><small class="text-secondary"><small>Inclui mensalmente:</small></small></p>
-                                <ul class="text-secondary list-unstyled">
-                                    <li><small><small>3 vídeos de 30s no aspecto [9:16]</small></small></li>
-                                    <li><small><small>3 imagens no aspecto [1:1]</small></small></li>
-                                    <li><small><small>3 imagens no aspecto [9:16]</small></small></li>
-                                </ul>
-                                <a href="" class="btn btn-light btn-impulse px-3 px-md-5 mt-3 open-chat-impulse">Quero engajar pessoas novas
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                    </svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-            <div class="bg-dark position-relative">
-                <div class="container px-vw-5 py-vh-5">
-                    <div class="row d-flex align-items-center">
-
-                        <div class="col-12 col-lg-7">
-                            <img class="img-fluid rounded-5 mb-n5 shadow bio-profile-img" src="img/person-renata.webp" width="320" height="320" alt="Renata" loading="lazy" data-aos="zoom-in-right">
-                            <img class="img-fluid rounded-5 ms-5 mb-n5 shadow bio-profile-img" src="img/person-fabricio.webp" width="320" height="320" alt="Fabrício Morais" loading="lazy" data-aos="zoom-in-up">
-                        </div>
-                        <div class="col-12 col-lg-5 bg-dark rounded-5 py-5 mt-5" data-aos="fade">
-                            <span class="h3 text-secondary">Idealizadores</span>
-                            <h2 class="display-5 mt-3">Renata Panzenhagem</h2>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut semper nibh, in pulvinar quam. Phasellus at mi at ipsum placerat volutpat. Morbi a arcu eu mi tristique volutpat id a nunc.</p>
-                            <h2 class="display-5 pt-4">Fabrício Morais</h2>
-                            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut semper nibh, in pulvinar quam. Phasellus at mi at ipsum placerat volutpat. Morbi a arcu eu mi tristique volutpat id a nunc.</p>
-                        </div>
+                    <div class="qualification-moment" data-aos="fade">
+                        <h3 class="impulse-color">
+                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 48h88c13.3 0 24-10.7 24-24s-10.7-24-24-24H32C14.3 0 0 14.3 0 32V136c0 13.3 10.7 24 24 24s24-10.7 24-24V48zM175.8 224a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-26.5 32C119.9 256 96 279.9 96 309.3c0 14.7 11.9 26.7 26.7 26.7h56.1c8-34.1 32.8-61.7 65.2-73.6c-7.5-4.1-16.2-6.4-25.3-6.4H149.3zm368 80c14.7 0 26.7-11.9 26.7-26.7c0-29.5-23.9-53.3-53.3-53.3H421.3c-9.2 0-17.8 2.3-25.3 6.4c32.4 11.9 57.2 39.5 65.2 73.6h56.1zm-89.4 0c-8.6-24.3-29.9-42.6-55.9-47c-3.9-.7-7.9-1-12-1H280c-4.1 0-8.1 .3-12 1c-26 4.4-47.3 22.7-55.9 47c-2.7 7.5-4.1 15.6-4.1 24c0 13.3 10.7 24 24 24H408c13.3 0 24-10.7 24-24c0-8.4-1.4-16.5-4.1-24zM464 224a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-80-32a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zM504 48h88v88c0 13.3 10.7 24 24 24s24-10.7 24-24V32c0-17.7-14.3-32-32-32H504c-13.3 0-24 10.7-24 24s10.7 24 24 24zM48 464V376c0-13.3-10.7-24-24-24s-24 10.7-24 24V480c0 17.7 14.3 32 32 32H136c13.3 0 24-10.7 24-24s-10.7-24-24-24H48zm456 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H608c17.7 0 32-14.3 32-32V376c0-13.3-10.7-24-24-24s-24 10.7-24 24v88H504z"/></svg>
+                            <span>Momento da Descoberta</span>
+                        </h3>
+                        <p>Quando as pessoas estão navegando nas redes sociais são impactadas por anúncios com base nos interesses. <strong>Impulsionar conteúdos</strong> estratégicos e consistentes nas redes sociais permite converter pessoas novas.</p>
+                        <a href="/">
+                            <span>Leia sobre o assunto</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1.3em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg>
+                        </a>
+                        <a href="#impulse">
+                            <span>Conheça o <span class="impulse-color">IMPULSE</span></span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="color-starter" viewbox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                            </svg>
+                        </a>
+                        <p>O <strong class="impulse-color">Impulse</strong> é ideal para quem precisa <strong>aumentar a base e vender mais</strong> com anúncios patrocinados. Pense no Impulse como uma forma constante de envolver e conquistar clientes com base nos objetivos do planejamento mensal de acordo com o seu momento atual.</p>
                     </div>
                 </div>
             </div>
-
-        </main>
-
-        <footer class="bg-black border-top border-dark text-secondary">
-            <div class="container text-center small py-vh-2 border-top border-dark">
-                <small>Copyright © 2023 FLOE TECNOLOGIA LTDA</small>
-                <br><small><small>CNPJ 48.568.565/0001-04 - Florianópolis, SC<small></small>
+        </section>
+        <section class="plan-section" id="starter">
+            <div class="section-container">
+                <div class="plan-video">
+                    <iframe data-aos="zoom-in-up" width="395" height="700" src="https://www.youtube.com/embed/BMO1_i8MSe0?controls=0&rel=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
+                </div>
+                <div class="plan-details" data-aos="fade">
+                    <h2 class="starter-color">STARTER</h2>
+                    <p><strong>Conteúdos</strong> produzidos uma única vez com a intenção de envolver pessoas - em uma fase mais avançada do processo de decisão - com a sua marca, serviços e produtos.</p>
+                    <p class="plan-text-secondary"><strong>Otimize a sua presença</strong> com conteúdos em todas as plataformas, como Instagram, Facebook, TikTok, WhatsApp Business, Google Meu Negócio, site, blog, entre outras plataformas.</p>
+                    <img width="400" src="/media/starter_img_1.png" alt="Pacote Starter">
+                    <span class="plan-text-secondary">A partir de:</span>
+                    <div class="plan-price">
+                        <span class="plan-price-prefix">R$</span>
+                        <span class="plan-price-number starter-color">997</span>
+                        <span class="plan-price-condition">Até 3x de R$ 332,33</span>
+                    </div>
+                    <p class="plan-text-secondary">Neste valor, inclui a criação de 5 vídeos de 30 segundos no aspecto 9:16 e 5 imagens no aspecto 1:1 <small>*Consulte adicionais.</small></p>
+                    <button class="starter-bg-color open-chat">
+                        <span>Quero melhorar minha presença</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </button>
+                </div>
             </div>
-        </footer>
-
-
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 800, // values from 0 to 3000, with step 50ms
-            });
-        </script>
-        <script>
-            let scrollpos = window.scrollY
-            const header = document.querySelector(".navbar")
-            const header_height = header.offsetHeight
-
-            const add_class_on_scroll = () => header.classList.add("scrolled")
-            const remove_class_on_scroll = () => header.classList.remove("scrolled")
-
-            window.addEventListener('scroll', function () {
-                scrollpos = window.scrollY;
-
-                if (scrollpos >= header_height) {
-                    add_class_on_scroll()
-                } else {
-                    remove_class_on_scroll()
-                }
-
-                console.log(scrollpos)
-            });
-
-            for(let element of document.getElementsByClassName('open-chat')) {
-                element.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    window.BrevoConversations.openChat();
-                });
-            }
-
-            for(let element of document.getElementsByClassName('open-chat-starter')) {
-                element.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    BrevoConversations('sendAutoMessage', 'Entendi que você precisa otimizar a sua presença. Me passa seu telefone para continuarmos a conversa?');
-                    setTimeout(() => {
-                        window.BrevoConversations.openChat();
-                    }, 100);
-                });
-            }
-
-            for(let element of document.getElementsByClassName('open-chat-plus')) {
-                element.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    BrevoConversations('sendAutoMessage', 'Entendi que você precisa se conectar com os seus clientes. Me passa seu telefone para continuarmos a conversa?');
-                    setTimeout(() => {
-                        window.BrevoConversations.openChat();
-                    }, 100);
-                });
-            }
-
-            for(let element of document.getElementsByClassName('open-chat-impulse')) {
-                element.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    BrevoConversations('sendAutoMessage', 'Entendi que você precisa engajar pessoas novas. Me passa seu telefone para continuarmos a conversa?');
-                    setTimeout(() => {
-                        window.BrevoConversations.openChat();
-                    }, 100);
-                });
-            }
-        </script>
-
-    </body>
+        </section>
+        <section class="plan-section" id="plus">
+            <div class="section-container plan-container-reverse">
+                <div class="plan-video">
+                    <iframe data-aos="zoom-in-up" width="395" height="700" src="https://www.youtube.com/embed/vlrXZWnjnlU?controls=0&rel=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
+                </div>
+                <div class="plan-details" data-aos="fade">
+                    <h2 class="plus-color">PLUS</h2>
+                    <p>Desenvolvimento de <strong>página única</strong> para conectar pessoas que precisam se aprofundar na marca, serviços, produtos e assuntos específicos.</p>
+                    <p class="plan-text-secondary"><strong>Reforce a experiência</strong> entre a sua marca e clientes com páginas e artigos para blog.</p>
+                    <img width="400" src="/media/plus_img_1.png" alt="Pacote Plus">
+                    <span class="plan-text-secondary">A partir de:</span>
+                    <div class="plan-price">
+                        <span class="plan-price-prefix">R$</span>s
+                        <span class="plan-price-number plus-color">1.897</span>
+                        <span class="plan-price-condition">Até 3x de R$ 632,33</span>
+                    </div>
+                    <p class="plan-text-secondary">Neste valor, inclui o desenvolvimento de 1 página com até 5 seções ou 1 blog de única página para publicação de artigos, ambos responsivos. <small>*Consulte adicionais. **Não inclui hospedagem. Recomendamos o GitHub Pages para hospedagem gratuita.</small></p>
+                    <button class="plus-bg-color open-chat">
+                        <span>Quero conectar meus clientes</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="plan-section" id="impulse">
+            <div class="section-container">
+                <div class="plan-video">
+                    <iframe data-aos="zoom-in-up" width="395" height="700" src="https://www.youtube.com/embed/PKqnaEnZ7j4?controls=0&rel=0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share;" allowfullscreen></iframe>
+                </div>
+                <div class="plan-details" data-aos="fade">
+                    <h2 class="impulse-color">IMPULSE</h2>
+                    <p><strong>Conteúdos</strong> produzidos e <strong>impulsionados mensalmente</strong> para engajar pessoas com marcas, serviços ou produtos.</p>
+                    <p class="plan-text-secondary"><strong>Engaje pessoas</strong> com mídias envolventes no Instagram e Facebook e converta em vendas.</p>
+                    <img width="400" src="/media/impulse_img_1.png" alt="Plano Impulse">
+                    <span class="plan-text-secondary">A partir de:</span>
+                    <div class="plan-price">
+                        <span class="plan-price-prefix">R$</span>
+                        <span class="plan-price-number impulse-color">1.597</span>
+                        <span class="plan-price-condition">/ mês</span>
+                    </div>
+                    <p class="plan-text-secondary">Neste valor, inclui mensalmente o planejamento e a produção de 3 vídeos de 30 segundos e 3 imagens no aspecto 9:16 e 3 imagens no aspecto 1:1. <small>*Consulte adicionais.</small></p>
+                    <button class="impulse-bg-color open-chat">
+                        <span>Quero engajar pessoas novas</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="comparison-section">
+            <div class="section-container">
+                <h2 data-aos="zoom-in-right">Somos diferentes!</h2>
+                <p data-aos="zoom-fade">"Analisamos o seu <strong>momento atual</strong> para permitir que você <strong>entregue experiências relevantes</strong> em todas as <strong>fases da jornada</strong> do seu cliente.</p>
+            </div>
+        </section>
+        <section class="different-section">
+            <div class="section-container">
+                <h2 data-aos="fade">EXPERIÊNCIA <strong class="span">360º</strong></h2>
+                <p data-aos="fade">Através de <strong>soluções personalizadas</strong>, conseguimos ir mais além e conectar dois <strong>universos distintos</strong>: ONLINE e OFFLINE.</p>
+                <button class="open-chat">
+                    <span>Conversar com especialista</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <section class="team-section">
+            <div class="section-container">
+                <div class="team-pics">
+                    <img src="/media/person-fabricio.webp" width="320" alt="Fabrício Morais" data-aos="zoom-in-right">
+                    <img src="/media/person-renata.webp" width="320" alt="Renata Panzenhagem" data-aos="zoom-in-left">
+                </div>
+                <div class="team-bio" data-aos="fade">
+                    <h2 class="plus-color">Idealizadores</h2>
+                    <div class="people">
+                        <h3>Fabrício Morais</h3>
+                        <p>Sou desenvolvedor <i>fullstack</i> e midiólogo fascinado pelas mídias digitais. Pós-graduado em Liderança, Inovação e Gestão 3.0 pela PUCRS, busco ter uma relação diferente com os clientes, visando o futuro do seu negócio com foco em experiências.</p>
+                    </div>
+                    <div class="people">
+                        <h3>Renata Panzenhagem</h3>
+                        <p>Com uma visão voltada para as tendências, sou responsável pelo sucesso do cliente. Assumo a responsabilidade de entender as suas necessidades para que possamos entregar resultados, com aquele atendimento excepcional, na intenção de criar parcerias valiosas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-links">
+            <a href="https://tiktok.com/@upfloe" target="_blank" title="TikTok">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z"/></svg>
+            </a>
+            <a href="https://youtube.com/@upFloeOficial" target="_blank" title="YouTube">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+            </a>
+            <a href="https://instagram.com/upfloe" target="_blank" title="Instagram">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+            </a>
+            <a href="https://facebook.com/upfloe" target="_blank" title="Facebook">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
+            </a>
+        </div>
+        <p>Copyright © 2023 FLOE TECNOLOGIA LTDA</p>
+        <p><small>CNPJ 48.568.565/0001-04 - Florianópolis, SC</small></p>
+    </footer>
+    <script src="/package/aos.js"></script>
+    <script src="/package/functions.js"></script>
+</body>
 </html>

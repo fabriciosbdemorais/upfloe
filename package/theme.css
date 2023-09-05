@@ -159,8 +159,7 @@ footer .social-links a:hover {
     height: 100vh;
 }
 .intro-section .section-container {
-    max-width: 800px;
-    margin-top: -5em;
+    max-width: 900px;
     gap: 1.2em;
     z-index: 3;
 }
@@ -189,7 +188,6 @@ footer .social-links a:hover {
 }
 
 .qualification-section {
-    margin-top: -20vh;
     z-index: 9;
     padding: 8em 4em;
     background-color: var(--bg-color-secondary);

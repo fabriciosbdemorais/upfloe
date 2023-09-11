@@ -72,7 +72,7 @@
 <body>
     <nav id="nav">
         <a href="/">
-            <img alt="Logo da UpFloe" src="/media/floe_logo.png" width="133">
+            <img alt="Logo da UpFloe" src="/media/floe_logo.png" width="133" height="133">
         </a>
     </nav>
     <main>
@@ -83,22 +83,22 @@
                 <p>
                     <span class="starter-color">ENVOLVA.</span> <span class="plus-color">CONECTE.</span> <span class="impulse-color">ENGAJE.</span>
                 </p>
-                <button class="open-chat">
+                <a href="#brevoConversationsExpanded" class="btn">
                     <span>Conversar com especialista</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                </button>
+                </a>
             </div>
-            <video autoplay loop muted>
+            <a href="#moments" class="intro-next-btn">
+                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg>
+            </a>
+            <video autoplay loop muted poster="/media/background_poster.webp">
                 <source src="/media/cat_background.mp4" type="video/mp4">
             </video>
         </section>
-        <section class="qualification-section">
+        <section class="qualification-section" id="moments">
             <div class="section-container">
                 <div class="qualification-headlines" data-aos="fade-right">
-                    <h3>Prepara-se para todas as interações<h3>
-                    <h2>Qualquer cliente vai pesquisar antes de comprar de você!</h2>
+                    <h3>Prepara-se para todas as interações</h3>
+                    <h2>Qualquer pessoa vai pesquisar antes de comprar de você!</h2>
                 </div>
                 <div class="qualification-moments">
                     <div class="qualification-moment" data-aos="fade">
@@ -106,29 +106,29 @@
                             <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
                             <span>Momento da Procura</span>
                         </h3>
-                        <p>Quando as pessoas decidem adquirir um produto ou serviço, possivelmente vão buscar informações na internet para tomar a decisão. A <strong>comunicação visual envolvente</strong> pode acelerar o processo de decisão neste momento da procura.</p>
-                        <a href="/">
-                            <span>Leia sobre o assunto</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1.3em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg>
-                        </a>
+                        <p>Quando as pessoas decidem adquirir um produto ou serviço, possivelmente buscam informações na internet antes de tomar uma decisão. A <strong>comunicação visual envolvente</strong> pode acelerar o processo de decisão neste momento da procura para que a pessoa escolha você.</p>
+                        <!-- <a href="/"> -->
+                            <!-- <span>Leia sobre o assunto</span> -->
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1.3em" viewBox="0 0 512 512">! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg> -->
+                        <!-- </a> -->
                         <a href="#starter">
                             <span>Conheça o <span class="starter-color">STARTER</span></span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="color-starter" viewbox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                             </svg>
                         </a>
-                        <p>O <strong class="starter-color">Starter</strong> é ideal para quem quer <strong>causar impacto visual</strong> em várias plataformas com vídeos e imagens envolventes. Pense no Starter como uma verdadeira renovação de imagem, uma forma de dar um novo começo. Em outras palavras, melhorar a "vitrine".</p>
+                        <p>O <strong class="starter-color">Starter</strong> é ideal para quem quer <strong>causar impacto visual</strong> em várias plataformas com vídeos e imagens envolventes. Pense no Starter como uma verdadeira renovação de imagem, uma forma de dar um novo começo. Em outras palavras, melhorar a sua "vitrine".</p>
                     </div>
                     <div class="qualification-moment" data-aos="fade">
                         <h3 class="plus-color">
                             <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M448 256A192 192 0 1 0 64 256a192 192 0 1 0 384 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 80a80 80 0 1 0 0-160 80 80 0 1 0 0 160zm0-224a144 144 0 1 1 0 288 144 144 0 1 1 0-288zM224 256a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
                             <span>Momento da Imersão</span>
                         </h3>
-                        <p>Quando as pessoas pesquisam, talvez são direcionadas para um site ou blog. O <strong>canal</strong> de <strong>aprofundamento</strong> sobre serviços, produtos e assuntos específicos, pode colaborar com a solicitação de contato.</p>
-                        <a href="/">
-                            <span>Leia sobre o assunto</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1.3em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg>
-                        </a>
+                        <p>Quando as pessoas pesquisam, podem ser direcionadas para um site ou blog. O <strong>canal</strong> de <strong>aprofundamento</strong> sobre serviços, produtos e assuntos específicos, colabora para que a pessoa entre em contato com você.</p>
+                        <!-- <a href="/"> -->
+                            <!-- <span>Leia sobre o assunto</span> -->
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1.3em" viewBox="0 0 512 512">! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg> -->
+                        <!-- </a> -->
                         <a href="#plus">
                             <span>Conheça o <span class="plus-color">PLUS</span></span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="color-starter" viewbox="0 0 16 16">
@@ -142,18 +142,18 @@
                             <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M48 48h88c13.3 0 24-10.7 24-24s-10.7-24-24-24H32C14.3 0 0 14.3 0 32V136c0 13.3 10.7 24 24 24s24-10.7 24-24V48zM175.8 224a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-26.5 32C119.9 256 96 279.9 96 309.3c0 14.7 11.9 26.7 26.7 26.7h56.1c8-34.1 32.8-61.7 65.2-73.6c-7.5-4.1-16.2-6.4-25.3-6.4H149.3zm368 80c14.7 0 26.7-11.9 26.7-26.7c0-29.5-23.9-53.3-53.3-53.3H421.3c-9.2 0-17.8 2.3-25.3 6.4c32.4 11.9 57.2 39.5 65.2 73.6h56.1zm-89.4 0c-8.6-24.3-29.9-42.6-55.9-47c-3.9-.7-7.9-1-12-1H280c-4.1 0-8.1 .3-12 1c-26 4.4-47.3 22.7-55.9 47c-2.7 7.5-4.1 15.6-4.1 24c0 13.3 10.7 24 24 24H408c13.3 0 24-10.7 24-24c0-8.4-1.4-16.5-4.1-24zM464 224a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm-80-32a64 64 0 1 0 -128 0 64 64 0 1 0 128 0zM504 48h88v88c0 13.3 10.7 24 24 24s24-10.7 24-24V32c0-17.7-14.3-32-32-32H504c-13.3 0-24 10.7-24 24s10.7 24 24 24zM48 464V376c0-13.3-10.7-24-24-24s-24 10.7-24 24V480c0 17.7 14.3 32 32 32H136c13.3 0 24-10.7 24-24s-10.7-24-24-24H48zm456 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H608c17.7 0 32-14.3 32-32V376c0-13.3-10.7-24-24-24s-24 10.7-24 24v88H504z"/></svg>
                             <span>Momento da Descoberta</span>
                         </h3>
-                        <p>Quando as pessoas estão navegando nas redes sociais são impactadas por anúncios com base nos interesses. <strong>Impulsionar conteúdos</strong> estratégicos e consistentes nas redes sociais permite converter pessoas novas.</p>
-                        <a href="/">
-                            <span>Leia sobre o assunto</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1.3em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg>
-                        </a>
+                        <p>Quando as pessoas estão navegando nas redes sociais são impactadas por anúncios com base em seus interesses. <strong>Impulsionar conteúdos</strong> estratégicos e consistentes nas redes sociais permite converter pessoas em novos clientes.</p>
+                        <!-- <a href="/"> -->
+                            <!-- <span>Leia sobre o assunto</span> -->
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" height="1.3em" viewBox="0 0 512 512">! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.<path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg> -->
+                        <!-- </a> -->
                         <a href="#impulse">
                             <span>Conheça o <span class="impulse-color">IMPULSE</span></span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="color-starter" viewbox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
                             </svg>
                         </a>
-                        <p>O <strong class="impulse-color">Impulse</strong> é ideal para quem precisa <strong>aumentar a base e vender mais</strong> com anúncios patrocinados. Pense no Impulse como uma forma constante de envolver e conquistar clientes com base nos objetivos do planejamento mensal de acordo com o seu momento atual.</p>
+                        <p>O <strong class="impulse-color">Impulse</strong> é ideal para quem precisa <strong>aumentar a base de clientes e vender mais</strong> com anúncios patrocinados. Pense no Impulse como uma forma constante de envolver e conquistar novos clientes com base no planejamento mensal de acordo com o seu momento atual.</p>
                     </div>
                 </div>
             </div>
@@ -167,7 +167,7 @@
                     <h2 class="starter-color">STARTER</h2>
                     <p><strong>Conteúdos</strong> produzidos uma única vez com a intenção de envolver pessoas - em uma fase mais avançada do processo de decisão - com a sua marca, serviços e produtos.</p>
                     <p class="plan-text-secondary"><strong>Otimize a sua presença</strong> com conteúdos em todas as plataformas, como Instagram, Facebook, TikTok, WhatsApp Business, Google Meu Negócio, site, blog, entre outras plataformas.</p>
-                    <img width="400" src="/media/starter_img_1.png" alt="Pacote Starter">
+                    <img width="400" height="171" src="/media/starter_img_1.png" alt="Pacote Starter">
                     <span class="plan-text-secondary">A partir de:</span>
                     <div class="plan-price">
                         <span class="plan-price-prefix">R$</span>
@@ -175,12 +175,12 @@
                         <span class="plan-price-condition">Até 3x de R$ 332,33</span>
                     </div>
                     <p class="plan-text-secondary">Neste valor, inclui a criação de 5 vídeos de 30 segundos no aspecto 9:16 e 5 imagens no aspecto 1:1 <small>*Consulte adicionais.</small></p>
-                    <button class="starter-bg-color open-chat">
+                    <a href="#brevoConversationsExpanded" class="btn starter-bg-color">
                         <span>Quero melhorar minha presença</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -192,21 +192,21 @@
                 <div class="plan-details" data-aos="fade">
                     <h2 class="plus-color">PLUS</h2>
                     <p>Desenvolvimento de <strong>página única</strong> para conectar pessoas que precisam se aprofundar na marca, serviços, produtos e assuntos específicos.</p>
-                    <p class="plan-text-secondary"><strong>Reforce a experiência</strong> entre a sua marca e clientes com páginas e artigos para blog.</p>
-                    <img width="400" src="/media/plus_img_1.png" alt="Pacote Plus">
+                    <p class="plan-text-secondary"><strong>Reforce a experiência</strong> entre a sua marca e clientes com páginas de site (LP) e artigos para blog.</p>
+                    <img width="400" height="171" src="/media/plus_img_1.png" alt="Pacote Plus">
                     <span class="plan-text-secondary">A partir de:</span>
                     <div class="plan-price">
-                        <span class="plan-price-prefix">R$</span>s
+                        <span class="plan-price-prefix">R$</span>
                         <span class="plan-price-number plus-color">1.897</span>
                         <span class="plan-price-condition">Até 3x de R$ 632,33</span>
                     </div>
-                    <p class="plan-text-secondary">Neste valor, inclui o desenvolvimento de 1 página com até 5 seções ou 1 blog de única página para publicação de artigos, ambos responsivos. <small>*Consulte adicionais. **Não inclui hospedagem. Recomendamos o GitHub Pages para hospedagem gratuita.</small></p>
-                    <button class="plus-bg-color open-chat">
+                    <p class="plan-text-secondary">Neste valor, inclui o desenvolvimento de 1 página com até 5 seções ou 1 blog de única página para publicação de artigos, ambos responsivos. <small>*Consulte adicionais. **Não inclui hospedagem.</small></p>
+                    <a href="#brevoConversationsExpanded" class="btn plus-bg-color">
                         <span>Quero conectar meus clientes</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
@@ -219,7 +219,7 @@
                     <h2 class="impulse-color">IMPULSE</h2>
                     <p><strong>Conteúdos</strong> produzidos e <strong>impulsionados mensalmente</strong> para engajar pessoas com marcas, serviços ou produtos.</p>
                     <p class="plan-text-secondary"><strong>Engaje pessoas</strong> com mídias envolventes no Instagram e Facebook e converta em vendas.</p>
-                    <img width="400" src="/media/impulse_img_1.png" alt="Plano Impulse">
+                    <img width="400" height="171" src="/media/impulse_img_1.png" alt="Plano Impulse">
                     <span class="plan-text-secondary">A partir de:</span>
                     <div class="plan-price">
                         <span class="plan-price-prefix">R$</span>
@@ -227,48 +227,48 @@
                         <span class="plan-price-condition">/ mês</span>
                     </div>
                     <p class="plan-text-secondary">Neste valor, inclui mensalmente o planejamento e a produção de 3 vídeos de 30 segundos e 3 imagens no aspecto 9:16 e 3 imagens no aspecto 1:1. <small>*Consulte adicionais.</small></p>
-                    <button class="impulse-bg-color open-chat">
+                    <a href="#brevoConversationsExpanded" class="btn impulse-bg-color">
                         <span>Quero engajar pessoas novas</span>
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
                             <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                         </svg>
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>
         <section class="comparison-section">
             <div class="section-container">
-                <h2 data-aos="zoom-in-right">Somos diferentes!</h2>
-                <p data-aos="zoom-fade">"Analisamos o seu <strong>momento atual</strong> para permitir que você <strong>entregue experiências relevantes</strong> em todas as <strong>fases da jornada</strong> do seu cliente.</p>
+                <h2 data-aos="zoom-in-right">Somos <strong>diferentes</strong>!</h2>
+                <p data-aos="zoom-fade">"Analisamos o seu <strong>momento atual</strong>, com <strong>orientações personalizadas</strong>, para permitir que você <strong>entregue experiências relevantes</strong> em todas as <strong>fases da jornada</strong> do seu cliente".</p>
             </div>
         </section>
         <section class="different-section">
             <div class="section-container">
                 <h2 data-aos="fade">EXPERIÊNCIA <strong class="span">360º</strong></h2>
                 <p data-aos="fade">Através de <strong>soluções personalizadas</strong>, conseguimos ir mais além e conectar dois <strong>universos distintos</strong>: ONLINE e OFFLINE.</p>
-                <button class="open-chat">
+                <a href="#brevoConversationsExpanded" class="btn">
                     <span>Conversar com especialista</span>
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-right" viewbox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
                     </svg>
-                </button>
+                </a>
             </div>
         </section>
         <section class="team-section">
             <div class="section-container">
                 <div class="team-pics">
-                    <img src="/media/person-fabricio.webp" width="320" alt="Fabrício Morais" data-aos="zoom-in-right">
-                    <img src="/media/person-renata.webp" width="320" alt="Renata Panzenhagem" data-aos="zoom-in-left">
+                    <img src="/media/person-fabricio.webp" width="320" height="332" alt="Fabrício Morais" data-aos="zoom-in-right">
+                    <img src="/media/person-renata.webp" width="320" height="332" alt="Renata Panzenhagem" data-aos="zoom-in-left">
                 </div>
                 <div class="team-bio" data-aos="fade">
                     <h2 class="plus-color">Idealizadores</h2>
                     <div class="people">
                         <h3>Fabrício Morais</h3>
-                        <p>Sou desenvolvedor <i>fullstack</i> e midiólogo fascinado pelas mídias digitais. Pós-graduado em Liderança, Inovação e Gestão 3.0 pela PUCRS, busco ter uma relação diferente com os clientes, visando o futuro do seu negócio com foco em experiências.</p>
+                        <p>Desenvolvedor <i>fullstack</i> e midiólogo fascinado pelas mídias digitais. Pós-graduado em Liderança, Inovação e Gestão 3.0 pela PUCRS, busco ter uma relação diferente com os clientes, visando o futuro do seu negócio com foco em experiências.</p>
                     </div>
                     <div class="people">
                         <h3>Renata Panzenhagem</h3>
-                        <p>Com uma visão voltada para as tendências, sou responsável pelo sucesso do cliente. Assumo a responsabilidade de entender as suas necessidades para que possamos entregar resultados, com aquele atendimento excepcional, na intenção de criar parcerias valiosas.</p>
+                        <p>Com uma visão voltada para as tendências de mercado, minha paixão é trabalhar incansavelmente para entender as necessidades e garantir o sucesso de nossos clientes. Com um atendimento de excelência, visando estabelecer parcerias valiosas com cada cliente.</p>
                     </div>
                 </div>
             </div>

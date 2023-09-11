@@ -27,6 +27,13 @@ body {
     -webkit-font-smoothing: antialiased;
     background-color: var(--bg-color);
     color: var(--text-color);
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+main {
+    overflow: hidden;
+    overflow-y: scroll; 
 }
 
 img {
@@ -60,12 +67,12 @@ i {
     font-style: italic !important;
 }
 
-button {
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .3em;
-    padding: 1em 2.4em;
+    padding: 1em 2em;
     max-width: 20em;
     font-size: 1.2em;
     background: linear-gradient(90deg, rgba(var(--starter-color-rgb)) 0%, rgba(var(--plus-color-rgb)) 50%, rgba(var(--impulse-color-rgb)) 100%);
@@ -74,7 +81,7 @@ button {
     font-weight: 500;
     cursor: pointer;
 }
-button:hover {
+.btn:hover {
     background: var(--text-color) !important;
     color: var(--bg-color) !important;
 }
@@ -92,16 +99,21 @@ section .section-container {
     position: relative;
     max-width: 1280px;
     margin: 0 auto;
+    padding: 4em;
 }
 
 nav a {
     position: fixed;
     left: 12vw;
-    height: 14em;
+    top: 3em;
     z-index: 99;
 }
+nav a,
 nav a img {
     transition: all 0.3s ease-in-out;
+}
+nav.scrolled a {
+    top: 2em;
 }
 nav.scrolled a img {
     width: 6em;
@@ -161,15 +173,20 @@ footer .social-links a:hover {
 .intro-section .section-container {
     max-width: 900px;
     gap: 1.2em;
+    padding: 0;
     z-index: 3;
 }
 .intro-section video {
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
     position: absolute;
-    opacity: .13;
-    z-index: 1;
     left: 0;
+    right: 0;
     top: 0;
+    bottom: 0;
+    z-index: 1;
+    opacity: .15;
 }
 .intro-section h1 {
     font-size: 4.4em;
@@ -186,10 +203,44 @@ footer .social-links a:hover {
     word-spacing: .3em;
     padding: .2em 0;
 }
-
+.intro-next-btn {
+    position: absolute;
+    left: calc(50vw - .6em);
+    bottom: 3em;
+    font-size: 3em;
+    background: none;
+    color: white;
+    z-index: 3;
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+    animation-duration: 2s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes fadeOutDown {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  }
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 100%, 0);
+      transform: translate3d(0, 100%, 0);
+    }
+  }
 .qualification-section {
     z-index: 9;
-    padding: 8em 4em;
     background-color: var(--bg-color-secondary);
 }
 .qualification-section p {
@@ -249,7 +300,7 @@ footer .social-links a:hover {
     width: 33.33%;
 }
 .qualification-section .qualification-moment h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -257,31 +308,33 @@ footer .social-links a:hover {
 }
 .qualification-section .section-container {
     max-width: 1280px;
+    padding-top: 8em;
 }
 
-.plan-section {
-    padding: 8em 0;
-}
 .plan-section h2 {
     font-size: 3em;
     font-weight: 500;
 }
 .plan-section .section-container {
+    justify-content: space-evenly;
     flex-direction: row;
     text-align: left;
-    max-width: 1080px;
+    padding-top: 8em;
+    padding-bottom: 8em;
+    gap: 3em;
 }
 .plan-section .plan-details {
     display: grid;
     gap: 1em;
     width: 40%;
+    max-width: 420px;
 }
 .plan-section .plan-video {
     text-align: center;
-    width: 60%;
 }
 .plan-section .plan-video iframe {
     border-radius: 2em;
+    max-width: 100%;
 }
 .plan-section button {
     margin-top: 1em;
@@ -310,19 +363,19 @@ footer .social-links a:hover {
 .comparison-section .section-container {
     flex-direction: row;
     text-align: left;
-    padding: 8em 0;
+    padding: 12em 6em;
 }
 .comparison-section h2 {
     width: 40%;
     font-size: 3em;
+    margin-right: 3em;
 }
 .comparison-section p {
-    width: 60%;
     background: var(--plus-color);
     padding: 1.6em;
     border-radius: 2em;
     color: white;
-    font-size: 2em !important;
+    font-size: 1.8em !important;
     font-weight: 300 !important;
 }
 
@@ -355,7 +408,7 @@ footer .social-links a:hover {
     letter-spacing: .6em;
 }
 .different-section h2 .span {
-    font-size: 1.8em;
+    font-size: 1.4em;
     letter-spacing: 0;
 }
 .different-section p {
@@ -370,7 +423,6 @@ footer .social-links a:hover {
 .team-section {
     display: grid;
     align-content: center;
-    padding: 0 3em !important;
 }
 .team-section h2 {
     font-size: 2.2em;
@@ -380,26 +432,28 @@ footer .social-links a:hover {
     font-size: 2.5em;
     margin-top: .6em;
     margin-bottom: .3em;
+    font-weight: bold;
 }
 .team-section p {
-    font-size: 1.3em;
+    font-size: 1.3em !important;
     color: var(--text-dark-color);
-    line-height: 1.2em;
+    line-height: 1.4em !important;
 }
 .team-section .section-container {
     flex-direction: row;
     text-align: left;
-    padding: 8em 0;
 }
 .team-section .section-container > div {
     width: 50%;
 }
 .team-section .team-pics {
     text-align: center;
+    padding: 6em 0;
 }
 .team-section .team-pics img {
     border-radius: 2em;
     width: 320px;
+    height: 332px;
 }
 .team-section .team-pics img:nth-child(2) {
     position: relative;
@@ -408,10 +462,7 @@ footer .social-links a:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-@media (min-width: 800px) {
-    .plan-container-reverse {
-        padding-left: 5em;
-    }
+@media (min-width: 1081px) {
     .plan-container-reverse .plan-video {
         order: 2;
     }
@@ -419,10 +470,171 @@ footer .social-links a:hover {
         order: 1;
     }
 }
-@media (min-width: 1280px) {
+@media (max-width: 480px) {
+    .qualification-section .qualification-headlines {
+        max-width: 300px;
+    }
+    .qualification-section .qualification-headlines h3 {
+        font-size: 1.1em !important;
+    }
+    .qualification-section .qualification-headlines h2 {
+        font-size: 1.9em !important;
+    }
+    .comparison-section p {
+        font-size: 1em !important;
+    }
+    .plan-section .plan-price-number {
+        font-size: 2.5em !important;
+    }
+    .qualification-section .qualification-moment h3 {
+        font-size: 1.4em !important;
+    }
+    .different-section h2 {
+        font-size: 1em !important;
+    }
+    .different-section p {
+        font-size: 1.2em !important;
+    }
+    .different-section .section-container {
+        margin: 0;
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 750px) {
+    .intro-section::before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: .15;
+        background-image: url('/media/background_mobile.webp');
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+    }
     .intro-section video {
+        display: none;
+    }
+    .plan-section .plan-video {
+        padding: 2em 0 !important;
+    }
+    .qualification-section .qualification-headlines {
+        width: 100% !important;
+        max-width: 400px;
+    }
+    .qualification-section .qualification-headlines h3 {
+        font-size: 1.4em;
+    }
+    .qualification-section .qualification-headlines h2 {
+        font-size: 2.5em;
+    }
+    .comparison-section p {
+        padding: 1.6em !important;
+        font-size: 1.3em !important;
+    }
+    .qualification-section p {
+        font-size: 1em !important;
+        line-height: 1.2em !important;
+    }
+    .team-section .team-pics img {
+        max-width: 180px;
         height: auto;
-        width: 100vw !important;
+    }
+    .team-section .team-pics img:nth-child(2) {
+        top: -1em;
+    }
+    .different-section h2 {
+        font-size: 1.3em;
+    }
+    section .section-container {
+        padding: 4em 2em;
+    } 
+}
+@media (max-width: 1080px) {
+    .intro-section .section-container {
+        max-width: 300px;
+        top: -3em;
+    }
+    .intro-section h1 {
+        font-size: 2.2em;
+    }
+    .intro-section h2 {
+        font-size: 1em;
+    }
+    .intro-section p {
+        font-size: .8em !important;
+    }
+    .plan-section .section-container {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+    .qualification-section .qualification-headlines {
+        width: 570px;
+    }
+    .plan-section .plan-video {
+        padding: 4em;
+    }
+    .team-section h3 {
+        font-size: 1.8em !important;
+        font-weight: 300;
+    }
+    .team-section p {
+        font-size: .9em !important;
+    }
+    .team-section .team-pics {
+        padding: 3em 0 !important;
+    }
+    .qualification-section .qualification-moments,
+    .comparison-section .section-container,
+    .plan-section .section-container,
+    .team-section .section-container {
+        flex-direction: column;
+    }
+    .qualification-section .qualification-moment,
+    .plan-section .plan-details,
+    .plan-section .plan-video,
+    .team-section .section-container > div,
+    .comparison-section h2,
+    .comparison-section p {
+        width: 100% !important;
+    }
+    .comparison-section .section-container {
+        padding: 2em;
+        padding-bottom: 6em;
+        max-width: 600px;
+    }
+    .comparison-section h2 {
+        text-align: center;
+        padding: 1em 0;
+        margin: 0;
+    }
+    footer .social-links a {
+        font-size: 2.4em !important;
+    }
+    .different-section:after {
+        background-position: 20%;
+    }
+    .btn {
+        padding: 1em;
+        font-size: 1em;
+    }
+    nav a {
+        top: 1em;
+    }
+    nav a img {
+        width: 5em;
+        height: auto;
+    }
+    nav.scrolled a img {
+        width: 4em;
+    }
+    p {
+        font-size: 1.2em !important;
+        line-height: 1em !important;
     }
 }
 @media (max-width: 1700px) {

@@ -7,10 +7,3 @@ window.addEventListener('scroll', function(event) {
     const classList = document.getElementById('nav').classList;
     scroll > 80 ? classList.add('scrolled') : classList.remove('scrolled');
 });
-
-const openChatButtons = document.getElementsByClassName('open-chat');
-for(button of openChatButtons) {
-    button.addEventListener('click', function() {
-        window.BrevoConversations.openChat();
-    });
-}

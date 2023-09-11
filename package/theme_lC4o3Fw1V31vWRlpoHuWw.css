@@ -392,7 +392,7 @@ footer .social-links a:hover {
 }
 .different-section:after {
     content: '';
-    background-image: url(/media/event.png);
+    background-image: url(/media/event.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 90%;

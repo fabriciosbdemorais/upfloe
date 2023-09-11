@@ -631,6 +631,7 @@ footer .social-links a:hover {
     }
     nav.scrolled a img {
         width: 4em;
+        height: auto;
     }
     p {
         font-size: 1.2em !important;

@@ -38,6 +38,7 @@ main {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 small {
@@ -308,7 +309,7 @@ footer .social-links a:hover {
     gap: .6em;
 }
 .qualification-section .section-container {
-    max-width: 1280px;
+    max-width: 1300px;
     padding-top: 8em;
 }
 
@@ -336,6 +337,7 @@ footer .social-links a:hover {
 .plan-section .plan-video iframe {
     border-radius: 2em;
     max-width: 100%;
+    max-height: 590px;
 }
 .plan-section button {
     margin-top: 1em;
@@ -356,6 +358,10 @@ footer .social-links a:hover {
 }
 .plan-section#plus {
     background-color: var(--bg-color-secondary);
+}
+.plan-bg-dark p,
+.plan-bg-dark div > span {
+    color: white !important;
 }
 
 .comparison-section {
